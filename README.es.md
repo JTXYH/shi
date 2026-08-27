@@ -4,6 +4,20 @@
 
 Shi es un asistente de limpieza del teclado y la pantalla para macOS. El modo de limpieza bloquea temporalmente el teclado y los clics del puntero, atenúa las pantallas y ofrece un atajo de salida claro para evitar acciones accidentales.
 
+## Capturas de pantalla
+
+<p align="center">
+  <img src="docs/images/screenshots/main-window.png" alt="Ventana principal de Shi" width="560">
+</p>
+
+<p align="center">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="Modo de limpieza Barrido" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="Modo de limpieza Blanco" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="Modo de limpieza Reloj nocturno" width="31%">
+</p>
+
+<p align="center"><sub>Barrido · Blanco · Reloj nocturno</sub></p>
+
 ## Funciones
 
 - Seis idiomas: chino simplificado, chino tradicional, inglés, japonés, coreano y español

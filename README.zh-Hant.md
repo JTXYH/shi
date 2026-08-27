@@ -4,6 +4,20 @@
 
 拭是一款 macOS 鍵盤與螢幕清潔輔助工具。進入清潔模式後，它會暫時攔截鍵盤輸入和滑鼠點擊、降低顯示器亮度，並提供明確的離開快捷鍵，避免清潔過程中誤操作。
 
+## 截圖
+
+<p align="center">
+  <img src="docs/images/screenshots/main-window.png" alt="拭的主介面" width="560">
+</p>
+
+<p align="center">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="拭鏡清潔模式" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="白屏清潔模式" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="夜鐘清潔模式" width="31%">
+</p>
+
+<p align="center"><sub>拭鏡 · 白屏 · 夜鐘</sub></p>
+
 ## 功能
 
 - 六種介面語言：簡體中文、繁體中文、English、日本語、한국어、Español

@@ -4,6 +4,20 @@
 
 拭は macOS 向けのキーボードと画面の清掃補助ツールです。清掃モードではキーボード入力とポインタのクリックを一時的に遮断し、ディスプレイを暗くして、清掃中の誤操作を防ぎます。
 
+## スクリーンショット
+
+<p align="center">
+  <img src="docs/images/screenshots/main-window.png" alt="拭のメイン画面" width="560">
+</p>
+
+<p align="center">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="ワイプ清掃モード" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="ホワイト清掃モード" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="ナイトクロック清掃モード" width="31%">
+</p>
+
+<p align="center"><sub>ワイプ · ホワイト · ナイトクロック</sub></p>
+
 ## 機能
 
 - 6 言語：簡体字中国語、繁体字中国語、英語、日本語、韓国語、スペイン語

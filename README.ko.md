@@ -4,6 +4,20 @@
 
 拭는 macOS 키보드 및 화면 청소 보조 도구입니다. 청소 모드에서는 키보드 입력과 포인터 클릭을 잠시 차단하고 디스플레이를 어둡게 하여 청소 중 오작동을 방지합니다.
 
+## 스크린샷
+
+<p align="center">
+  <img src="docs/images/screenshots/main-window.png" alt="拭 메인 화면" width="560">
+</p>
+
+<p align="center">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="닦기 청소 모드" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="화이트 청소 모드" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="야간 시계 청소 모드" width="31%">
+</p>
+
+<p align="center"><sub>닦기 · 화이트 · 야간 시계</sub></p>
+
 ## 기능
 
 - 간체 중국어, 번체 중국어, 영어, 일본어, 한국어, 스페인어 지원
