@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "拭";
+"CFBundleName" = "拭";
+"NSAccessibilityUsageDescription" = "清掃中の誤操作を防ぐため、拭にはキーボードとトラックパッドの入力を遮断する権限が必要です。";

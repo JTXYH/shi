@@ -1,0 +1,23 @@
+{
+  "type": "design",
+  "designSystems": [],
+  "primaryDesignSystem": null,
+  "assets": {
+    "拭镜清洁模式": {
+      "versions": [
+        {
+          "path": "Cleaning Overlay.html",
+          "createdAt": "2026-08-26T06:35:09.933Z",
+          "status": "needs-review",
+          "subtitle": "全屏拭镜动效与双 Shift 退出手感",
+          "viewport": {
+            "width": 1440,
+            "height": 900
+          }
+        }
+      ]
+    }
+  },
+  "createdAt": "2026-08-26T06:35:09.934Z",
+  "updatedAt": "2026-08-26T06:41:32.933Z"
+}

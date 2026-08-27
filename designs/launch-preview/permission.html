@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<style>
+  :root{
+    --paper-top:#FEFEFF; --paper-bottom:#F0F1F3;
+    --ink:#1D1D20; --accent:#0A84FF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-font-smoothing:antialiased;}
+  html,body{background:#cdd3db;}
+  body{font-family:-apple-system,"PingFang SC","SF Pro Text",sans-serif;
+    display:flex;align-items:center;justify-content:center;min-height:100vh;padding:40px;}
+  .win{width:488px;height:528px;border-radius:12px;overflow:hidden;position:relative;
+    background:linear-gradient(180deg,var(--paper-top),var(--paper-bottom));
+    box-shadow:0 30px 80px rgba(0,0,0,.28),0 2px 6px rgba(0,0,0,.12);}
+  .lights{position:absolute;top:16px;left:16px;display:flex;gap:8px;z-index:5;}
+  .lights i{width:12px;height:12px;border-radius:50%;display:block;}
+  .lights .r{background:#ff5f57;} .lights .y{background:#febc2e;} .lights .g{background:#28c840;}
+  .content{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;padding:0 40px;text-align:center;}
+  .badge{width:62px;height:62px;border-radius:16px;background:rgba(10,132,255,.12);
+    display:flex;align-items:center;justify-content:center;}
+  .badge svg{fill:var(--accent);}
+  .title{font-size:18px;font-weight:600;color:var(--ink);margin-top:16px;}
+  .desc{font-size:13px;color:rgba(29,29,32,.55);margin-top:8px;line-height:1.5;}
+  .card{margin-top:22px;width:100%;background:#fff;border:1px solid rgba(0,0,0,.07);
+    border-radius:14px;padding:16px;text-align:left;}
+  .step{display:flex;align-items:flex-start;gap:12px;font-size:13px;color:rgba(29,29,32,.78);}
+  .step + .step{margin-top:16px;}
+  .num{flex:none;width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;
+    font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;}
+  .step b{color:var(--ink);font-weight:600;}
+  .foot{font-size:11px;color:rgba(29,29,32,.38);margin-top:10px;}
+  .btn{margin-top:20px;width:220px;height:44px;border-radius:22px;color:#fff;
+    font-size:14px;font-weight:600;display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(180deg,#3898FF,#0070F2);box-shadow:0 12px 26px rgba(10,132,255,.30);}
+  .wait{display:flex;align-items:center;gap:8px;margin-top:16px;font-size:12px;color:rgba(29,29,32,.45);}
+  .spin{width:14px;height:14px;border:2px solid rgba(0,0,0,.18);border-top-color:rgba(0,0,0,.45);
+    border-radius:50%;animation:sp 0.8s linear infinite;}
+  @keyframes sp{to{transform:rotate(360deg);}}
+  .back{margin-top:10px;font-size:12px;color:rgba(29,29,32,.40);}
+</style>
+</head>
+<body>
+  <div class="win">
+    <div class="lights"><i class="r"></i><i class="y"></i><i class="g"></i></div>
+    <div class="content">
+      <div class="badge">
+        <svg width="34" height="34" viewBox="0 0 48 48">
+          <rect x="12" y="9" width="5" height="19" rx="2.5"/>
+          <rect x="19.5" y="4" width="5" height="24" rx="2.5"/>
+          <rect x="27" y="6" width="5" height="22" rx="2.5"/>
+          <rect x="34.5" y="10" width="5" height="18" rx="2.5"/>
+          <path d="M10 25 h31 v5 a13 13 0 0 1 -13 13 h-5 a13 13 0 0 1 -13 -13 z"/>
+          <rect x="3" y="21" width="5" height="15" rx="2.5" transform="rotate(-28 5.5 28)"/>
+        </svg>
+      </div>
+      <div class="title">开启辅助功能权限</div>
+      <div class="desc">拭 需要辅助功能权限，才能在清洁时<br/>拦截键盘和触控板，避免误触。</div>
+      <div class="card">
+        <div class="step"><div class="num">1</div><div>打开 <b>系统设置 › 隐私与安全性 › 辅助功能</b></div></div>
+        <div class="step"><div class="num">2</div><div>在列表里找到 <b>拭</b>，打开右侧开关</div></div>
+      </div>
+      <div class="foot">若列表中没有「拭」，点列表下方的 + 号添加即可</div>
+      <div class="btn">打开辅助功能设置</div>
+      <div class="wait"><div class="spin"></div>完成授权后将自动开始清洁</div>
+      <div class="back">返回</div>
+    </div>
+  </div>
+</body>
+</html>

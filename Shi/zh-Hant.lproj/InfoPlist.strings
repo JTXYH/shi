@@ -1,0 +1,3 @@
+"CFBundleDisplayName" = "拭";
+"CFBundleName" = "拭";
+"NSAccessibilityUsageDescription" = "拭需要輔助使用權限，才能在清潔時攔截鍵盤和觸控板，避免誤觸。";

@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000000000000000101 /* ShiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000201 /* ShiApp.swift */; };
+		A100000000000000000102 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000202 /* AppModel.swift */; };
+		A100000000000000000103 /* Skin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000203 /* Skin.swift */; };
+		A100000000000000000104 /* PermissionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000204 /* PermissionService.swift */; };
+		A100000000000000000105 /* HotKeyCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000205 /* HotKeyCenter.swift */; };
+		A100000000000000000106 /* EventTapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000206 /* EventTapController.swift */; };
+		A100000000000000000107 /* OverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000207 /* OverlayController.swift */; };
+		A100000000000000000108 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000208 /* OverlayView.swift */; };
+		A100000000000000000109 /* AtmosphereView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000209 /* AtmosphereView.swift */; };
+		A10000000000000000010A /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000020A /* LaunchView.swift */; };
+		A10000000000000000010B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10000000000000000020B /* SettingsView.swift */; };
+		A10000000000000000010C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000020C /* Assets.xcassets */; };
+		A100000000000000000113 /* AppIcon.icns in Resources */ = {isa = PBXBuildFile; fileRef = A100000000000000000213 /* AppIcon.icns */; };
+		A10000000000000000010D /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A10000000000000000020D /* Carbon.framework */; };
+		A10000000000000000010E /* BrightnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000210 /* BrightnessController.swift */; };
+		A100000000000000000112 /* PermissionCoachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000212 /* PermissionCoachView.swift */; };
+		A10000000000000000010F /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A100000000000000000211 /* IOKit.framework */; };
+		A100000000000000000114 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000214 /* Localization.swift */; };
+		A100000000000000000115 /* UpdateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A100000000000000000215 /* UpdateController.swift */; };
+		A100000000000000000116 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A100000000000000000400 /* InfoPlist.strings */; };
+		A100000000000000000117 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = A100000000000000000500 /* Sparkle */; };
+		A100000000000000000119 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A10000000000000000021C /* LICENSE */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A100000000000000000200 /* Shi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A100000000000000000201 /* ShiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiApp.swift; sourceTree = "<group>"; };
+		A100000000000000000202 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		A100000000000000000203 /* Skin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skin.swift; sourceTree = "<group>"; };
+		A100000000000000000204 /* PermissionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionService.swift; sourceTree = "<group>"; };
+		A100000000000000000205 /* HotKeyCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyCenter.swift; sourceTree = "<group>"; };
+		A100000000000000000206 /* EventTapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTapController.swift; sourceTree = "<group>"; };
+		A100000000000000000207 /* OverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayController.swift; sourceTree = "<group>"; };
+		A100000000000000000208 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		A100000000000000000209 /* AtmosphereView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtmosphereView.swift; sourceTree = "<group>"; };
+		A10000000000000000020A /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
+		A10000000000000000020B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A10000000000000000020C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A10000000000000000020D /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		A10000000000000000020E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A10000000000000000020F /* Shi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Shi.entitlements; sourceTree = "<group>"; };
+		A100000000000000000210 /* BrightnessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessController.swift; sourceTree = "<group>"; };
+		A100000000000000000212 /* PermissionCoachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionCoachView.swift; sourceTree = "<group>"; };
+		A100000000000000000213 /* AppIcon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = AppIcon.icns; sourceTree = "<group>"; };
+		A100000000000000000211 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A100000000000000000214 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		A100000000000000000215 /* UpdateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateController.swift; sourceTree = "<group>"; };
+		A100000000000000000216 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A100000000000000000217 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A100000000000000000218 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A100000000000000000219 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A10000000000000000021A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A10000000000000000021B /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A10000000000000000021C /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A100000000000000000301 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000010D /* Carbon.framework in Frameworks */,
+				A10000000000000000010F /* IOKit.framework in Frameworks */,
+				A100000000000000000117 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A100000000000000000001 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000002 /* Shi */,
+				A100000000000000000003 /* Frameworks */,
+				A100000000000000000004 /* Products */,
+				A10000000000000000021C /* LICENSE */,
+			);
+			sourceTree = "<group>";
+		};
+		A100000000000000000002 /* Shi */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000201 /* ShiApp.swift */,
+				A100000000000000000202 /* AppModel.swift */,
+				A100000000000000000203 /* Skin.swift */,
+				A100000000000000000204 /* PermissionService.swift */,
+				A100000000000000000205 /* HotKeyCenter.swift */,
+				A100000000000000000206 /* EventTapController.swift */,
+				A100000000000000000207 /* OverlayController.swift */,
+				A100000000000000000208 /* OverlayView.swift */,
+				A100000000000000000209 /* AtmosphereView.swift */,
+				A10000000000000000020A /* LaunchView.swift */,
+				A100000000000000000210 /* BrightnessController.swift */,
+				A100000000000000000212 /* PermissionCoachView.swift */,
+				A10000000000000000020B /* SettingsView.swift */,
+				A100000000000000000214 /* Localization.swift */,
+				A100000000000000000215 /* UpdateController.swift */,
+				A10000000000000000020C /* Assets.xcassets */,
+				A100000000000000000213 /* AppIcon.icns */,
+				A10000000000000000020E /* Info.plist */,
+				A10000000000000000020F /* Shi.entitlements */,
+				A100000000000000000400 /* InfoPlist.strings */,
+			);
+			path = Shi;
+			sourceTree = "<group>";
+		};
+		A100000000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A10000000000000000020D /* Carbon.framework */,
+				A100000000000000000211 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A100000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A100000000000000000200 /* Shi.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A100000000000000000005 /* Shi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A10000000000000000000C /* Build configuration list for PBXNativeTarget "Shi" */;
+			buildPhases = (
+				A100000000000000000006 /* Sources */,
+				A100000000000000000301 /* Frameworks */,
+				A100000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shi;
+			packageProductDependencies = (
+				A100000000000000000500 /* Sparkle */,
+			);
+			productName = Shi;
+			productReference = A100000000000000000200 /* Shi.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A100000000000000000000 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					A100000000000000000005 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = A10000000000000000000B /* Build configuration list for PBXProject "Shi" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+				"zh-Hant",
+				ja,
+				ko,
+				es,
+			);
+			mainGroup = A100000000000000000001 /* Root */;
+			packageReferences = (
+				A100000000000000000600 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			productRefGroup = A100000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A100000000000000000005 /* Shi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A100000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000000000000000010C /* Assets.xcassets in Resources */,
+				A100000000000000000113 /* AppIcon.icns in Resources */,
+				A100000000000000000116 /* InfoPlist.strings in Resources */,
+				A100000000000000000119 /* LICENSE in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A100000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000000000000000101 /* ShiApp.swift in Sources */,
+				A100000000000000000102 /* AppModel.swift in Sources */,
+				A100000000000000000103 /* Skin.swift in Sources */,
+				A100000000000000000104 /* PermissionService.swift in Sources */,
+				A100000000000000000105 /* HotKeyCenter.swift in Sources */,
+				A100000000000000000106 /* EventTapController.swift in Sources */,
+				A100000000000000000107 /* OverlayController.swift in Sources */,
+				A100000000000000000108 /* OverlayView.swift in Sources */,
+				A100000000000000000109 /* AtmosphereView.swift in Sources */,
+				A10000000000000000010A /* LaunchView.swift in Sources */,
+				A10000000000000000010E /* BrightnessController.swift in Sources */,
+				A100000000000000000112 /* PermissionCoachView.swift in Sources */,
+				A10000000000000000010B /* SettingsView.swift in Sources */,
+				A100000000000000000114 /* Localization.swift in Sources */,
+				A100000000000000000115 /* UpdateController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A100000000000000000009 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A10000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Shi/Shi.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Shi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shi.clean;
+				PRODUCT_NAME = Shi;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A10000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Shi/Shi.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Shi/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shi.clean;
+				PRODUCT_NAME = Shi;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				STRIP_INSTALLED_PRODUCT = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A10000000000000000000B /* Build configuration list for PBXProject "Shi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A100000000000000000009 /* Debug */,
+				A10000000000000000000A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A10000000000000000000C /* Build configuration list for PBXNativeTarget "Shi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A10000000000000000000D /* Debug */,
+				A10000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin PBXVariantGroup section */
+		A100000000000000000400 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A100000000000000000216 /* zh-Hans */,
+				A100000000000000000217 /* zh-Hant */,
+				A100000000000000000218 /* en */,
+				A100000000000000000219 /* ja */,
+				A10000000000000000021A /* ko */,
+				A10000000000000000021B /* es */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A100000000000000000600 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = exactVersion;
+				version = 2.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A100000000000000000500 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A100000000000000000600 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A100000000000000000000 /* Project object */;
+}
