@@ -2,7 +2,19 @@
 
 [简体中文](README.md) | [繁體中文](README.zh-Hant.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md)
 
-拭は macOS 向けのキーボードと画面の清掃補助ツールです。清掃モードではキーボード入力とポインタのクリックを一時的に遮断し、ディスプレイを暗くして、清掃中の誤操作を防ぎます。
+拭は、macOS のキーボードと画面を清掃するための無料のオープンソースツールです。清掃モードではキーボード入力を一時的に遮断し、初期設定ではトラックパッドとマウスのクリックも遮断します。画面を暗くして、拭き掃除中の誤操作を減らします。清掃が終わったら、終了用のキーの組み合わせを長押しして通常の操作に戻れます。
+
+[最新版をダウンロード](https://github.com/JTXYH/shi/releases/latest) · [問題を報告](https://github.com/JTXYH/shi/issues) · [MIT ライセンス](LICENSE)
+
+## 機能
+
+- **清掃中の入力を一時停止**：キーボード入力を遮断し、トラックパッドとマウスのクリック遮断も選択できます。
+- **3 種類の清掃画面**：ワイプ、ホワイト、ナイトクロック。複数のディスプレイに清掃画面を表示できます。
+- **画面の減光と復元**：清掃中に画面を暗くし、終了時に元に戻します。動作はディスプレイと macOS の対応状況によって異なります。
+- **ショートカットで開始・終了**：アプリの起動中に `Control + Option + Command + C` で開始し、左右両方の `Shift` または `Shift + Esc` を長押しして終了します。
+- **時間の調整**：終了に必要な長押し時間と、清掃を自動終了するまでの時間を設定できます。
+- **6 言語に対応**：簡体字中国語、繁体字中国語、英語、日本語、韓国語、スペイン語。
+- **アプリ内アップデート**：Sparkle で更新を確認し、更新の署名を検証します。
 
 ## スクリーンショット
 
@@ -11,79 +23,83 @@
 </p>
 
 <p align="center">
-  <img src="docs/images/screenshots/cleaning-wipe.png" alt="ワイプ清掃モード" width="31%">
-  <img src="docs/images/screenshots/cleaning-white.png" alt="ホワイト清掃モード" width="31%">
-  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="ナイトクロック清掃モード" width="31%">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="ワイプの清掃画面" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="ホワイトの清掃画面" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="ナイトクロックの清掃画面" width="31%">
 </p>
 
 <p align="center"><sub>ワイプ · ホワイト · ナイトクロック</sub></p>
 
-## 機能
-
-- 6 言語：簡体字中国語、繁体字中国語、英語、日本語、韓国語、スペイン語
-- 初回起動時は macOS の優先言語を使用し、設定で選択した言語は保存
-- 3 種類の清掃表示：ワイプ、ホワイト、ナイトクロック
-- 左右の Shift、または Shift + Esc を長押しして安全に終了
-- 終了までの長押し時間、最大清掃時間、クリック遮断を設定可能
-- Sparkle 2 による署名付き更新
-- Apple Silicon と Intel Mac に対応する Universal 2 ビルド
-
 ## 動作環境
 
-- macOS 14 以降
-- 清掃モードには「システム設定 › プライバシーとセキュリティ › アクセシビリティ」の許可が必要
+- macOS 14 Sonoma 以降。
+- Apple Silicon または Intel 搭載の Mac。ビルドは Universal 2 形式です。
+- 清掃モードには macOS のアクセシビリティの許可が必要です。
 
-アクセシビリティの許可は、清掃中の入力遮断にのみ使用します。キー入力の記録や利用データの送信は行いません。HTTPS による更新確認以外のネットワーク通信も行いません。
+## インストール
 
-## ダウンロード
+1. [GitHub Releases](https://github.com/JTXYH/shi/releases/latest) からアプリの ZIP ファイルをダウンロードします。
+2. 展開して `Shi.app` を「アプリケーション」フォルダに移動します。
+3. アプリを開き、以下の手順で使い始めます。
 
-[⬇️ GitHub Releases から最新版をダウンロード](https://github.com/JTXYH/shi/releases/latest)
+現在の標準の配布方式では ad-hoc 署名を使用しており、Apple の公証を受けていません。初回起動時に開発元を検証できない、または悪意のあるソフトウェアを確認できないと表示された場合は、本リポジトリから入手した未改変のファイルであることを確認し、[Apple の起動手順](https://support.apple.com/en-us/102445) に従ってください。macOS がマルウェアを明示的に検出した場合、その警告を無視しないでください。
 
-ZIP を解凍し、`Shi.app` を「アプリケーション」フォルダへ移動してください。
+## 使い方
 
-### 初回起動時に macOS でブロックされる場合
+1. 拭を開いて清掃画面を選び、「クリーニング開始」をクリックします。アプリの起動中は `Control + Option + Command + C` も使えます。
+2. 初回は案内に従い、「システム設定 › プライバシーとセキュリティ › アクセシビリティ」で拭を許可します。一覧にない場合は `+` で `Shi.app` を追加してください。**許可すると自動的に清掃が始まります。**
+3. 終了するには左右両方の `Shift`、または `Shift + Esc` を長押しします。初期設定では **1.5 秒**で終了し、入力と画面の明るさが元に戻ります。
 
-現在のパッケージは ad-hoc 署名で、Apple の公証を受けていません。「Apple はこのアプリに悪意のあるソフトウェアが含まれていないか確認できません」または「開発元を検証できません」と表示された場合は、まず本リポジトリの [GitHub Releases](https://github.com/JTXYH/shi/releases) から取得したことを確認し、次のいずれかを行ってください。
+設定で変更できる項目：
 
-1. Finder で「アプリケーション」を開き、`Shi.app` を Control キーを押しながらクリックするか右クリックして「開く」を選び、確認画面でもう一度「開く」を選びます。
-2. または一度起動を試した後、「システム設定 › プライバシーとセキュリティ」のセキュリティ欄で「このまま開く」を選びます。
+| 設定 | 初期値 | 選択肢 |
+| --- | --- | --- |
+| 終了に必要な長押し時間 | 1.5 秒 | 1 秒、1.5 秒、2 秒 |
+| 最大清掃時間 | 10 分 | 5 分、10 分、自動終了なし |
+| トラックパッドとマウスのクリック遮断 | オン | オン・オフ |
 
-Gatekeeper を無効にしたり、出所不明のターミナルコマンドを実行したりしないでください。macOS がマルウェアを明示的に検出した場合はファイルを削除し、公式 Release から再ダウンロードしてください。
+初回起動時は macOS の最優先の言語を使い、未対応の言語の場合は英語になります。手動で選んだ言語は Mac に保存されます。
 
-初回許可後の更新は、Sparkle が Ed25519 署名を検証してインストールします。ad-hoc 署名には安定した Team ID がないため、更新後にアクセシビリティの再許可を求められる場合があります。
+電源ボタンと Touch ID は遮断できません。席を離れるときは macOS の画面ロックを使用してください。
+
+## 権限・プライバシー・更新
+
+- アクセシビリティの許可は、清掃モード中のキーボード入力の遮断に使用します。キー入力の内容や利用統計は記録せず、設定は Mac に保存します。
+- 清掃機能はオフラインで使え、アカウントは不要です。更新の確認とダウンロードにはネットワーク接続が必要です。
+- リリースビルドでは HTTPS で更新情報を取得し、Sparkle の Ed25519 署名で appcast と更新アーカイブを検証します。設定から手動で更新を確認できます。デバッグビルドでは更新確認は無効です。
+- ad-hoc 署名のアプリを更新または再ビルドした後は、アクセシビリティの再許可が必要になる場合があります。清掃を開始できない場合は、アクセシビリティの一覧で拭を再度有効にしてください。
+
+脆弱性は [セキュリティポリシー](SECURITY.md) に従い、非公開で報告してください。
 
 ## ソースからビルド
 
-Xcode 16 以降が必要です。Sparkle 2.9.2 を固定して使用しています。
+開発には macOS と Xcode 16 以降が必要です。コマンドラインツールの参照先をその Xcode に設定してください。Swift、SwiftUI、AppKit を使用し、Swift Package Manager 経由で [Sparkle](https://github.com/sparkle-project/Sparkle) を導入しています。現在の固定バージョンは 2.9.2 です。初回ビルドには依存関係を取得するためのネットワーク接続が必要です。
 
 ```sh
+git clone https://github.com/JTXYH/shi.git
+cd shi
 ./scripts/build-app.sh debug
+open dist/Shi.app
 ```
 
-ビルド結果は `dist/Shi.app` に出力されます。既定では ad-hoc 署名を使用し、メイン App と内蔵 Sparkle 実行ファイルを再署名します。
+スクリプトは `arm64` と `x86_64` の両方を含む `dist/Shi.app` を生成します。標準では ad-hoc 署名を使うため、ローカルビルドに Developer ID 証明書は不要です。Xcode で `Shi.xcodeproj` を開き、`Shi` scheme を選んで開発・デバッグすることもできます。
 
-## リリース
-
-現在の配布方式は Codex Meter と同じで、ad-hoc コード署名と Sparkle Ed25519 による更新アーカイブおよび appcast の署名を使用します。リリーススクリプトは Universal 2 App をビルドし、内蔵署名を検証して ZIP、SHA-256、appcast を生成します。
+リポジトリのルートで既存の言語選択チェックを実行できます：
 
 ```sh
-./scripts/package-release.sh
+./scripts/test-language-selection.sh
 ```
 
-`vX.Y.Z` の GitHub Release を作成し、生成された ZIP、SHA-256、`appcast.xml` をアップロードします。将来 Developer ID を取得した場合は、同じスクリプトで正式署名と Apple 公証を有効にできます。
+このチェックではシステム言語の判定と保存済み言語の優先順位を確認します。清掃、権限、ディスプレイの動作は実際の Mac でのテストが必要です。
 
-詳細は [docs/releasing.md](docs/releasing.md) を参照してください。
+## 貢献
 
-## セキュリティ
+[Issues](https://github.com/JTXYH/shi/issues) と [Pull Requests](https://github.com/JTXYH/shi/pulls) で、不具合報告、改善、翻訳を受け付けています。
 
-- 現在の公開ビルドは ad-hoc 署名で Apple 公証を受けていないため、初回起動時に Gatekeeper の警告が表示される
-- HTTPS、署名付き appcast、Ed25519 で Sparkle 更新を検証
-- グローバル入力遮断のため App Sandbox は無効
-- 診断に macOS Unified Logging を使い、予測可能な `/tmp` ファイルは作成しない
-- 一部の Mac では非公開の DisplayServices にフォールバックするため、対象 macOS での回帰テストが必要
-
-脆弱性の報告は [SECURITY.md](SECURITY.md) を参照してください。
+- 不具合報告には、アプリのバージョン、macOS のバージョン、Mac の機種、再現手順、期待する結果を記載してください。表示の問題にはディスプレイ構成も添えてください。
+- 変更の理由と検証方法を説明してください。画面の変更にはスクリーンショットを添え、入力遮断・終了・明るさに関する変更は実際の Mac で検証してください。
+- 機能説明や翻訳を変更する際は、6 言語の README を同期してください。アプリ内の文言は [Shi/Localization.swift](Shi/Localization.swift) にあります。
 
 ## ライセンス
 
-[MIT](LICENSE)
+[JTXYH](https://github.com/JTXYH) がメンテナンスしており、[MIT ライセンス](LICENSE) で公開しています。サードパーティの依存ライブラリにはそれぞれのライセンスが適用されます。

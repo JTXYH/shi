@@ -2,7 +2,19 @@
 
 [简体中文](README.md) | [繁體中文](README.zh-Hant.md) | [English](README.en.md) | [日本語](README.ja.md) | [한국어](README.ko.md) | [Español](README.es.md)
 
-Shi is a macOS keyboard and screen cleaning assistant. Cleaning mode temporarily blocks keyboard input and pointer clicks, dims the displays, and provides an explicit exit shortcut to prevent accidental actions while cleaning.
+Shi is a free, open-source keyboard and screen cleaning assistant for macOS. Cleaning mode temporarily blocks keyboard input, blocks trackpad and mouse clicks by default, and dims your displays to reduce accidental actions while wiping. Hold an exit shortcut when you are done to resume using your Mac.
+
+[Download the latest release](https://github.com/JTXYH/shi/releases/latest) · [Report an issue](https://github.com/JTXYH/shi/issues) · [MIT license](LICENSE)
+
+## Features
+
+- **Pause input while cleaning**: block keyboard input, with optional blocking of trackpad and mouse clicks.
+- **Three cleaning appearances**: Wipe, White, and Night Clock, with cleaning overlays across multiple displays.
+- **Display dimming and restoration**: dim displays during cleaning and restore them on exit; results depend on display and macOS support.
+- **Quick start and exit**: while Shi is running, press `Control + Option + Command + C` to start; hold both `Shift` keys or `Shift + Esc` to exit.
+- **Adjustable session timing**: choose the exit hold duration and an automatic timeout to end a cleaning session.
+- **Six interface languages**: Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and Spanish.
+- **In-app updates**: check for updates and verify update signatures with Sparkle.
 
 ## Screenshots
 
@@ -11,80 +23,83 @@ Shi is a macOS keyboard and screen cleaning assistant. Cleaning mode temporarily
 </p>
 
 <p align="center">
-  <img src="docs/images/screenshots/cleaning-wipe.png" alt="Wipe cleaning mode" width="31%">
-  <img src="docs/images/screenshots/cleaning-white.png" alt="White cleaning mode" width="31%">
-  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="Night Clock cleaning mode" width="31%">
+  <img src="docs/images/screenshots/cleaning-wipe.png" alt="Wipe cleaning appearance" width="31%">
+  <img src="docs/images/screenshots/cleaning-white.png" alt="White cleaning appearance" width="31%">
+  <img src="docs/images/screenshots/cleaning-night-clock.png" alt="Night Clock cleaning appearance" width="31%">
 </p>
 
 <p align="center"><sub>Wipe · White · Night Clock</sub></p>
 
-## Features
-
-- Six interface languages: Simplified Chinese, Traditional Chinese, English, Japanese, Korean, and Spanish
-- Uses the first macOS preferred language on initial launch; a language selected in Settings is remembered
-- Three cleaning appearances: Wipe, White, and Night Clock
-- Hold both Shift keys, or hold Shift + Esc, to safely leave cleaning mode
-- Configurable exit hold duration, maximum cleaning time, and pointer-click blocking
-- Signed update checks and installation with Sparkle 2
-- Universal 2 build for Apple Silicon and Intel Macs
-
 ## Requirements
 
-- macOS 14 or later
-- Cleaning mode requires access under System Settings › Privacy & Security › Accessibility
+- macOS 14 Sonoma or later.
+- An Apple Silicon or Intel Mac; the build produces a Universal 2 app.
+- macOS Accessibility permission for cleaning mode.
 
-Accessibility access is used only to block input during cleaning mode. Shi does not record keystrokes or upload usage data. It makes no network requests except HTTPS software-update checks.
+## Installation
 
-## Download
+1. Download the application ZIP from [GitHub Releases](https://github.com/JTXYH/shi/releases/latest).
+2. Extract it and move `Shi.app` to the Applications folder.
+3. Open the app and follow the usage steps below.
 
-[⬇️ Download the latest release from GitHub](https://github.com/JTXYH/shi/releases/latest)
+The default distribution currently uses ad-hoc signing and is not notarized by Apple. If the first launch reports an unidentified developer or says Apple cannot check for malicious software, confirm that the file came from this repository and has not been altered, then follow [Apple's instructions for opening the app](https://support.apple.com/en-us/102445). Do not override an explicit malware detection.
 
-Extract the ZIP and move `Shi.app` to Applications.
+## Usage
 
-### If macOS blocks the first launch
+1. Open Shi, choose a cleaning appearance, and click **Start Cleaning**. You can also press `Control + Option + Command + C` while the app is running.
+2. On first use, follow the prompt to **System Settings › Privacy & Security › Accessibility** and enable Shi. If it is missing, add `Shi.app` with the `+` button. **Cleaning starts automatically once permission is granted.**
+3. When you are done, hold both the left and right `Shift` keys, or hold `Shift + Esc`. The default hold time is **1.5 seconds**, after which input and display brightness are restored.
 
-The current package is ad-hoc signed and has not been notarized by Apple. If macOS says it cannot check the app for malicious software or cannot verify the developer, first confirm that the app came from this repository's [GitHub Releases](https://github.com/JTXYH/shi/releases), then use either method:
+The following options are available in Settings:
 
-1. Open Applications in Finder, Control-click or right-click `Shi.app`, choose Open, and confirm Open again.
-2. Or try to launch it once, then go to System Settings › Privacy & Security and choose Open Anyway in the Security section.
+| Setting | Default | Options |
+| --- | --- | --- |
+| Exit hold duration | 1.5 seconds | 1, 1.5, or 2 seconds |
+| Maximum cleaning time | 10 minutes | 5 minutes, 10 minutes, or no automatic timeout |
+| Block trackpad and mouse clicks | On | On or off |
 
-Do not disable Gatekeeper or run untrusted Terminal commands to bypass protection. If macOS explicitly reports malware, delete the file and download it again from the official Release.
+On first launch, Shi uses the first preferred macOS language, falling back to English if it is unsupported. A manually selected language is saved locally.
 
-After the first approval, Sparkle verifies and installs later updates using Ed25519 signatures. Because ad-hoc signatures have no stable Team ID, macOS may ask you to enable Accessibility again after an update.
+The power button and Touch ID cannot be blocked. Use the macOS lock screen when you step away.
+
+## Permissions, privacy, and updates
+
+- Accessibility permission enables keyboard interception during cleaning mode. Shi does not record keystrokes or collect usage analytics; preferences are stored locally.
+- Cleaning works offline and requires no account. Update checks and update downloads require a network connection.
+- Release builds fetch update information over HTTPS and verify the appcast and update archive with Sparkle's Ed25519 signatures. You can check for updates in Settings; debug builds disable update checks.
+- After an ad-hoc signed app is updated or rebuilt, macOS may require Accessibility permission again. If cleaning will not start, re-enable Shi in the Accessibility list.
+
+Report vulnerabilities privately by following the [security policy](SECURITY.md).
 
 ## Build from source
 
-Xcode 16 or later is required. The project pins Sparkle 2.9.2; Xcode resolves the Swift Package dependency during the first build.
+Development requires macOS and Xcode 16 or later, with the command-line tools set to that Xcode installation. The project uses Swift, SwiftUI, and AppKit, with [Sparkle](https://github.com/sparkle-project/Sparkle) supplied through Swift Package Manager and currently pinned to 2.9.2. The first build needs a network connection to fetch dependencies.
 
 ```sh
+git clone https://github.com/JTXYH/shi.git
+cd shi
 ./scripts/build-app.sh debug
+open dist/Shi.app
 ```
 
-The result is written to `dist/Shi.app`. Builds use ad-hoc signing by default and re-sign the host app and every embedded Sparkle executable.
+The script produces `dist/Shi.app` containing both `arm64` and `x86_64` architectures. It uses ad-hoc signing by default, so a local build does not require a Developer ID certificate. You can also open `Shi.xcodeproj` in Xcode and select the `Shi` scheme for development and debugging.
 
-## Release
-
-The current distribution model matches Codex Meter: ad-hoc code signing plus Sparkle Ed25519 signatures for the update archive and appcast. The release script builds a Universal 2 app, verifies nested signatures, and generates a ZIP, SHA-256 checksum, and appcast.
+Run the existing language-selection checks from the repository root:
 
 ```sh
-./scripts/package-release.sh
+./scripts/test-language-selection.sh
 ```
 
-Create a GitHub Release named `vX.Y.Z` and upload the generated ZIP, SHA-256 file, and `appcast.xml`. If a Developer ID becomes available later, the same script can enable Developer ID signing and Apple notarization through environment variables.
+These checks cover system-language resolution and saved-language precedence. Cleaning, permissions, and display behavior still need testing on a real Mac.
 
-See [docs/releasing.md](docs/releasing.md) for the complete release procedure.
+## Contributing
 
-## Security design
+Bug reports, improvements, and translations are welcome through [Issues](https://github.com/JTXYH/shi/issues) and [Pull Requests](https://github.com/JTXYH/shi/pulls).
 
-- Current public builds are ad-hoc signed and not Apple-notarized, so Gatekeeper displays a warning on first launch. Ad-hoc builds omit Library Validation so the Sparkle framework can load without a Team ID.
-- The Sparkle feed uses HTTPS and requires a signed appcast and Ed25519 archive signatures.
-- Packaging verifies the signatures of the update framework and every embedded executable.
-- App Sandbox is disabled because global input interception requires Accessibility access outside the sandbox. The app explains this access before it is requested.
-- Diagnostics use macOS Unified Logging and never write to a predictable `/tmp` file.
-- Display brightness prefers public system interfaces. Some Macs fall back to Apple's private DisplayServices interface and therefore require regression testing on target macOS versions.
-
-See [SECURITY.md](SECURITY.md) to report a security issue.
+- For bug reports, include the app version, macOS version, Mac model, reproduction steps, and expected result. Include your display setup for visual issues.
+- Explain the reason for your change and how you verified it. Include screenshots for interface changes; test input blocking, exit behavior, and brightness changes on a real Mac.
+- Keep all six READMEs in sync when updating feature descriptions or translations. In-app text lives in [Shi/Localization.swift](Shi/Localization.swift).
 
 ## License
 
-[MIT](LICENSE)
+Maintained by [JTXYH](https://github.com/JTXYH) and released under the [MIT license](LICENSE). Third-party dependencies retain their respective licenses.
